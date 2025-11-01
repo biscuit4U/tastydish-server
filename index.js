@@ -8,7 +8,7 @@ import { globalLimiter } from './middlewares/rateLimit.js';
 import "dotenv/config"
 const app = express();
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "https://tastydish-client.vercel.app",
     credentials: true
 }));
 app.use(globalLimiter)
